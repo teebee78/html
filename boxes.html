@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <meta charset='UTF-8'/>
+        <title>Boxes</title>
+        <link rel='stylesheet' href="box-styles.css"/>
+    </head>
+    <body>
+        <h1>Headigs are Block Elemets</h1>
+        <p>Paramgraphs are blocks, too.<em>However</em>, &lt;em&gt; and &lt;strong&gt; elements are not. They are <strong>inline</strong> elements</strong></p>
+
+        <p>Block elements define the flow of the HTML document, while inline elemnts do not. </p>
+
+        <p>
+            Block boxes always appear below the previous block element. 
+            <br>
+            The width of block boxes is set automatically based on the width of its parent container.
+            <br>
+            The default height of block boxes is based on the content it contains.
+        </p>
+        <h2>Margin, Border and padding</h2>
+        Everything inside the border gets a background, margins are always transparent.
+        Padding is included in the click area of an element, while margins aren’t.
+        Margins collapse vertically, while padding doesn’t (we’ll discuss this more in the next section).
+        Inline boxes completely ignore the top and bottom margins of an element.
+
+        <h2>Vertical Margin Collapse</h2>
+        When you have two boxes with vertical margins sitting right next to each other, they will collapse. 
+
+        <h2>Content Boxes and Border Boxes</h2>
+        The width and height properties only define the size of a box’s content. Its padding and border are both added on top of whatever explicit dimensions you set
+        Fortunately, CSS lets you change how the width of a box is calculated via the box-sizing property. 
+        By default, it has a value of content-box. Other: border-box; 
+    </body>
+</html>
